@@ -35,7 +35,7 @@ public class AdminController {
 
 
 	@PutMapping("/update")
-	public ResponseEntity<Admin> updateAdminPassword(@RequestParam Integer adminId, @RequestParam String password){
+	public ResponseEntity<Admin> updateAdminPassword(@RequestParam("adminId") Integer adminId, @RequestParam("password") String password){
 		Admin updatedAdmin = adminService.updatePassword(adminId, password);
 		return new ResponseEntity<>(updatedAdmin, HttpStatus.OK);
 	}

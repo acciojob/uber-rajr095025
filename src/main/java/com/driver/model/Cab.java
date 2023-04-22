@@ -2,7 +2,6 @@ package com.driver.model;
 
 
 import javax.persistence.*;
-import java.sql.Driver;
 
 @Entity
 public class Cab{
@@ -18,7 +17,9 @@ public class Cab{
 
     @OneToOne
     @JoinColumn
-    com.driver.model.Driver driver;
+    Driver driver;
+
+
     public Cab() {
     }
 
@@ -55,11 +56,11 @@ public class Cab{
         this.available = available;
     }
 
-    public com.driver.model.Driver getDriver() {
+    public Driver getDriver() {
         return driver;
     }
 
-    public void setDriver(com.driver.model.Driver driver) {
+    public void setDriver(Driver driver) {
         this.driver = driver;
     }
 }
