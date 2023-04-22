@@ -49,7 +49,7 @@ public class CustomerServiceImpl implements CustomerService {
 			customer = customerRepository2.findById(customerId).get();
 		}
 		catch(Exception e){
-			throw new Exception ("No cab available!");
+			throw new Exception ("No value present");
 		}
 
 
