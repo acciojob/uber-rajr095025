@@ -8,6 +8,7 @@ import java.sql.Driver;
 public class Cab{
 
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
     private int id;
 
     private int perKmRate;
@@ -17,7 +18,7 @@ public class Cab{
 
     @OneToOne
     @JoinColumn
-    Driver driver;
+    com.driver.model.Driver driver;
     public Cab() {
     }
 
@@ -54,11 +55,11 @@ public class Cab{
         this.available = available;
     }
 
-    public Driver getDriver() {
+    public com.driver.model.Driver getDriver() {
         return driver;
     }
 
-    public void setDriver(Driver driver) {
+    public void setDriver(com.driver.model.Driver driver) {
         this.driver = driver;
     }
 }
