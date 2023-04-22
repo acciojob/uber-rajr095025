@@ -55,10 +55,9 @@ public class AdminController {
 
 
 	@GetMapping("/listOfDrivers")
-	public List<java.sql.Driver> listOfDrivers() {
-		List<Driver> listOfDrivers = adminService.getListOfDrivers();
-		List<java.sql.Driver> ans = new ArrayList<>();
-		return ans;
+	public List<com.driver.model.Driver> listOfDrivers() {
+		List<com.driver.model.Driver> listOfDrivers = adminService.getListOfDrivers();
+		return listOfDrivers;
 	}
 
 }
