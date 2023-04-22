@@ -80,7 +80,7 @@ public class CustomerServiceImpl implements CustomerService {
 			//if no driver available
 			//tripBooking.setTripStatus(TripStatus.CANCELED);
 			//tripBookingRepository2.save(tripBooking);
-			throw new Exception("No cab available!");
+			throw new Exception("No value present");
 		}
 
 		// book the trip
