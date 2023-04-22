@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -54,9 +55,10 @@ public class AdminController {
 
 
 	@GetMapping("/listOfDrivers")
-	public List<Driver> listOfDrivers() {
+	public List<java.sql.Driver> listOfDrivers() {
 		List<Driver> listOfDrivers = adminService.getListOfDrivers();
-		return listOfDrivers;
+		List<java.sql.Driver> ans = new ArrayList<>();
+		return ans;
 	}
 
 }
