@@ -84,6 +84,9 @@ public class TripBooking{
         this.tripStatus = tripStatus;
     }
 
+    public void setStatus(TripStatus tripStatus) {
+        this.tripStatus = tripStatus;
+    }
     public int getBill() {
         return bill;
     }
