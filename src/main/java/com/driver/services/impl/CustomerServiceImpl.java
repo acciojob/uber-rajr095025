@@ -63,6 +63,9 @@ public class CustomerServiceImpl implements CustomerService {
 		// check driver availability and find driver with minimum driver id
 		Driver driver  = null;
 		List<Driver> driverList = driverRepository2.findAll();
+		if(driverList.isEmpty()){
+			throw new Exception("No value present");
+		}
 		if(driverList.size() == 0){
 			throw new Exception();
 		}
