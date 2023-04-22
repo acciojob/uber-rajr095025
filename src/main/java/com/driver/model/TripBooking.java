@@ -15,6 +15,7 @@ public class TripBooking{
 
     private int distanceInKm;
 
+    @Enumerated(EnumType.STRING)
     private TripStatus tripStatus;
 
     private int bill;
@@ -103,4 +104,6 @@ public class TripBooking{
     public void setDriver(Driver driver) {
         this.driver = driver;
     }
+
+
 }

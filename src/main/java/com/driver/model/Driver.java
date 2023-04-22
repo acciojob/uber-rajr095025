@@ -68,5 +68,7 @@ public class Driver{
     public void setTripBookingList(List<TripBooking> tripBookingList) {
         this.tripBookingList = tripBookingList;
     }
+
+
 }
 

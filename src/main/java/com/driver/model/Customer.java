@@ -59,4 +59,6 @@ public class Customer{
     public void setTripBookingList(List<TripBooking> tripBookingList) {
         this.tripBookingList = tripBookingList;
     }
+
+
 }
