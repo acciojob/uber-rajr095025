@@ -43,15 +43,15 @@ public class CustomerServiceImpl implements CustomerService {
 		//Avoid using SQL query
 		Customer customer;
 		customer = customerRepository2.findById(customerId).get();
-		/*
+
 		try {
-			if(customerRepository2.existsById(customerId)) throw new Exception();
+			if(!customerRepository2.existsById(customerId)) throw new Exception();
 			customer = customerRepository2.findById(customerId).get();
 		}
 		catch(Exception e){
 			throw new Exception ("No cab available!");
 		}
-		*/
+
 
 		// create trip booking object
 		TripBooking tripBooking = new TripBooking();
